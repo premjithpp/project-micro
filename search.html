@@ -1,0 +1,211 @@
+<html>
+
+<head>
+    <title>Mentor On Demand</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header id="heading">
+        <div class="navbar navbar navbar-dark bg-dark justify-content-between">
+            <div class="row">
+                <a class="navbar-brand" style="color: white"><span id="head">Mentor On Demand</span></a>
+            </div>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link " href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="myBtn">Sign in</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+
+
+    <div class="container-fluid  ">
+        <h5 class="row align-items-center justify-content-center pt-3">Serach Trainers</h5>
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-4 pt-3">
+                <div class="form-group ">
+                    <input type="text" id="textSearch" class="form-control" placeholder="spring" autofocus>
+
+                </div>
+            </div>
+
+
+            <div class="col-md-1.5 pt-3">
+                <div class="form-group">
+                    <select id="timeSlot" class="form-control">
+                        <option>Time Slot</option>
+                        <option selected>7am-9am</option>
+                        <option>4pm-6pm</option>
+                        <option>6pm-8pm</option>
+
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-1">
+                <button style="background-color: #3b3a37; color: white" type="button" class="btn "
+                    onclick="return display()"><span class="fa fa-search"></span></button>
+            </div>
+        </div>
+
+        <div class="container mt-3 elements" id="search-result">
+
+            <div class="media border p-3 mt-3" style="border-radius: 1rem; background:rgb(83, 83, 83)">
+
+
+                <div class="media-body ">
+                    <div class="row align-items-center justify-content-center">
+                        <img src="images/trainer_img.png" alt="Mr Smith" class="mr-2 mt-2 rounded-circle"
+                            style="width:60px;">
+                        <h6 class="col-md-2 pt-3">Mr Harry Potter </h6>
+                        <span class="col-md-2 pt-3"><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star "></span>
+                        <span class="fa fa-star"></span> </span>
+                        <span class="col-md-4 pt-3">No. of trainings completed : <span>12</span> </span>
+                        <button style="background-color:green; color: white" class="btn  col-md-2 pt-2">Propose
+                            Training</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="media border p-3 mt-3" style="border-radius: 1rem; background:rgb(83, 83, 83)">
+
+
+                <div class="media-body">
+                    <div class="row align-items-center justify-content-center">
+                        <img src="images/trainer_img.png" alt="c" class="mr-2 mt-2 rounded-circle" style="width:60px;">
+                        <h6 class="col-md-2 pt-3">Ms Hermione Gringer</h6>
+                        <span class="col-md-2 pt-3"><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span> </span>
+                        <span class="col-md-4 pt-3">No. of trainings completed : <span>12</span> </span>
+                        <button style="background-color:green; color: white" class="btn col-md-2 pt-2">Propose
+                            Training</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="media border p-3 mt-3" style="border-radius: 1rem; background:rgb(83, 83, 83)">
+
+
+                <div class="media-body">
+                    <div class="row align-items-center justify-content-center">
+                        <img src="images/trainer_img.png" alt="Marshall Erickson" class="mr-2 mt-2 rounded-circle"
+                            style="width:60px;">
+                        <h6 class="col-md-2 pt-3">Mr Ron Weasel</h6>
+                        <span class="col-md-2 pt-3"><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star "></span>
+                        <span class="fa fa-star "></span>
+                        <span class="fa fa-star"></span> </span>
+                        <span class="col-md-4 pt-3">No. of trainings completed : <span>12</span> </span>
+                        <button style="background-color:green; color: white" class="btn  col-md-2 pt-2" id="myBtn">Propose
+                            Training</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+
+
+    <div class="container">
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header" style="padding:35px 50px;">
+                        <h5><span class="fa fa-lock"></span> Sign In</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                    </div>
+                    <div class="modal-body" style="padding:40px 50px;">
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="usrname"><span class="fa fa-user-circle-o"></span> Username</label>
+                                <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="psw"><span class="fa fa-eye"></span> Password</label>
+                                <input type="password" class="form-control" id="psw" placeholder="Enter password">
+                            </div>
+                            <div class="form-group">
+                                <label for="category"><span class="fa fa-questionmark"></span> Category</label>
+                                <select name="category" id="category" class="form-control">
+                                    <option value="trainer">Trainer</option>
+                                    <option value="trainee" selected>Trainee</option>
+                                </select>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="" checked>Remember me</label>
+                            </div>
+                            <button type="submit" class="btn btn-dark btn-block" onclick=" return validate()"><span class="fa fa-sign-in" ></span>
+                                Login</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <p>Not a member? <a id="signup" >Sign Up</a></p>
+                        <p>Forgot <a href="#">Password?</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="page-footer font-small bg-dark fixed-bottom">
+
+        <div class="footer-copyright text-center py-3 text-white">© 2019 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/"> Mentorondemand.com</a>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

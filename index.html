@@ -1,0 +1,127 @@
+<html>
+
+<head>
+    <title>Mentor On Demand</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header id="heading">
+        <div class="navbar navbar navbar-dark bg-dark justify-content-between">
+            <div class="row">
+                <a class="navbar-brand" style="color: white"><span id="head">Mentor On Demand</span></a>
+            </div>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="search.html"><i class="fa fa-search"></i>Search Trainer</a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="myBtn">Sign in</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="bg">
+        <!-- <div class="conatiner-fluid">
+            <h3 id="welcome-message">Welcome to Mentor on demand.You can search for trainers on your required skills.The tariners can also
+                join us to help and eduacte the young minds.</h3>
+        </div> -->
+
+
+    </div>
+    <div class="container">
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header" style="padding:35px 50px;">
+                        <h5><span class="fa fa-lock"></span> Sign In</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                    </div>
+                    <div class="modal-body" style="padding:40px 50px;">
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="usrname"><span class="fa fa-user-circle-o"></span> Username</label>
+                                <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="psw"><span class="fa fa-eye"></span> Password</label>
+                                <input type="password" class="form-control" id="psw" placeholder="Enter password">
+                            </div>
+                            <div class="form-group">
+                                <label for="category"><span class="fa fa-questionmark"></span> Category</label>
+                                <select name="category" id="category" class="form-control">
+                                    <option value="trainer">Trainer</option>
+                                    <option value="trainee" selected>Trainee</option>
+                                </select>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="" checked>Remember me</label>
+                            </div>
+                            <button type="submit" class="btn btn-dark btn-block" onclick="return validate()"><span
+                                    class="fa fa-sign-in"></span>
+                                Login</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <p>Not a member? <a id="signup" onclick="validate()">Sign Up</a></p>
+                        <p>Forgot <a href="#">Password?</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer class="page-footer font-small bg-dark fixed-bottom">
+
+            <div class="footer-copyright text-center py-3 text-white">© 2019 Copyright:
+                <a href="https://mdbootstrap.com/education/bootstrap/"> Mentorondemand.com</a>
+            </div>
+
+        </footer>
+
+</body>
+
+</html>
