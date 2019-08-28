@@ -21,23 +21,23 @@
 </head>
 
 <body>
-        <header id="heading">
-                <div class="navbar navbar navbar-dark bg-dark justify-content-between">
-                    <div class="row">
-                        <a class="navbar-brand" style="color: white"><span id="head">Mentor On Demand</span></a>
-                    </div>
-                    <ul class="nav justify-content-end">
-                        <li><a style="color: aliceblue;padding: 7px;" href="trainee-login.html"><span style="padding: 7px;"
-                                    class="fa fa-home"></span> Home</a></li>
-                        <li><a style="color: aliceblue;padding: 7px;" href="#"><span style="padding: 7px;"
-                                    class="fa fa-envelope"></span> Notifications</a></li>
-        
-                        <li><a style="color: aliceblue; padding: 7px;" href="index.html"><span style="padding: 7px;"
-                                    class="fa fa-sign-out"></span> Logout</a></li>
-                    </ul>
-                </div>
-            </header>
-        
+    <header id="heading">
+        <div class="navbar navbar navbar-dark bg-dark justify-content-between">
+            <div class="row">
+                <a class="navbar-brand" style="color: white"><span id="head">Mentor On Demand</span></a>
+            </div>
+            <ul class="nav justify-content-end">
+                <li><a style="color: aliceblue;padding: 7px;" href="trainee-login.html"><span style="padding: 7px;"
+                            class="fa fa-home"></span> Home</a></li>
+                <li><a style="color: aliceblue;padding: 7px;" href="#"><span style="padding: 7px;"
+                            class="fa fa-envelope"></span> Notifications</a></li>
+
+                <li><a style="color: aliceblue; padding: 7px;" href="index.html"><span style="padding: 7px;"
+                            class="fa fa-sign-out"></span> Logout</a></li>
+            </ul>
+        </div>
+    </header>
+
 
 
 
@@ -76,16 +76,17 @@
 
                 <div class="media-body ">
                     <div class="row align-items-center justify-content-center">
-                        <img src="images/trainer_img.png" alt="Mr Smith" class="mr-2 mt-2 rounded-circle"
-                            style="width:60px;">
-                        <h6 class="col-md-2 pt-3">Mr Harry Potter </h6>
+                        <img src="male1.png" alt="Mr Smith" class="mr-2 mt-2 rounded-circle" style="width:60px;">
+                        <h6 class="col-md-2 pt-3">Harry
+                            Potter</h6>
                         <span class="col-md-2 pt-3"><span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star "></span>
                             <span class="fa fa-star"></span> </span>
-                        <span class="col-md-4 pt-3">No. of trainings completed : <span>12</span> </span>
-                        <button style="background-color:green; color: white" class="btn  col-md-2 pt-2">Propose
+                        <button class="btn  btn-primary col-md-2 pt-2 mr-3" data-toggle="modal"
+                            data-target="#harrypotter">View profile</button>
+                        <button class=" btn btn-success col-md-2 pt-2">Propose
                             Training</button>
                     </div>
                 </div>
@@ -96,15 +97,17 @@
 
                 <div class="media-body">
                     <div class="row align-items-center justify-content-center">
-                        <img src="images/trainer_img.png" alt="c" class="mr-2 mt-2 rounded-circle" style="width:60px;">
-                        <h6 class="col-md-2 pt-3">Ms Hermione Gringer</h6>
+                        <img src="female.png" alt="c" class="mr-2 mt-2 rounded-circle" style="width:60px;">
+                        <h6 class="col-md-2 pt-3">Ms Hermione
+                            Gringer</h6>
                         <span class="col-md-2 pt-3"><span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star"></span> </span>
-                        <span class="col-md-4 pt-3">No. of trainings completed : <span>12</span> </span>
-                        <button style="background-color:green; color: white" class="btn col-md-2 pt-2">Propose
+                        <button class="btn  btn-primary col-md-2 pt-2 mr-3" data-toggle="modal"
+                            data-target="#hermionie">View profile</button>
+                        <button class=" btn btn-success col-md-2 pt-2">Propose
                             Training</button>
                     </div>
                 </div>
@@ -115,17 +118,19 @@
 
                 <div class="media-body">
                     <div class="row align-items-center justify-content-center">
-                        <img src="images/trainer_img.png" alt="Marshall Erickson" class="mr-2 mt-2 rounded-circle"
+                        <img src="male2.jpg" alt="Marshall Erickson" class="mr-2 mt-2 rounded-circle"
                             style="width:60px;">
-                        <h6 class="col-md-2 pt-3">Mr Ron Weasel</h6>
+                        <h6 class="col-md-2 pt-3">Mr Ron Weasel
+                        </h6>
                         <span class="col-md-2 pt-3"><span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star "></span>
                             <span class="fa fa-star "></span>
                             <span class="fa fa-star"></span> </span>
-                        <span class="col-md-4 pt-3">No. of trainings completed : <span>12</span> </span>
-                        <button style="background-color:green; color: white" class="btn  col-md-2 pt-2"
-                            id="myBtn">Propose
+
+                        <button class="btn  btn-primary col-md-2 pt-2 mr-3" data-toggle="modal" data-target="#ron">View
+                            profile</button>
+                        <button class="myBtn btn btn-success  col-md-2 pt-2">Propose
                             Training</button>
                     </div>
                 </div>
@@ -139,6 +144,110 @@
 
 
 
+
+
+    <div class="container">
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="harrypotter" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header" style="padding:35px 50px;">
+                        <img src="male1.png" alt="Mr Smith" class="mr-2 mt-2 rounded-circle" style="width:60px;">
+                        <h5> Harry Potter</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                    </div>
+                    <div class="modal-body" style="padding:40px 50px;">
+                        
+                        <div>
+                            <p>Technologies known: Spring ,java,Angular</p>
+                        </div>
+                        <div>No of Trainings compleated:12</div>
+                        <div> Rating:
+                            <span class="col-md-2 pt-3"><span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star"></span> </span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="modal fade" id="hermionie" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header" style="padding:35px 50px;">
+                        <img src="female.png" alt="Mr Smith" class="mr-2 mt-2  " style="width:60px;">
+                        <h5> Hermionie Grainger</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                    </div>
+                    <div class="modal-body" style="padding:40px 50px;">
+                        <div>
+                            <p>Technologies known: Spring ,java,Angular</p>
+                        </div>
+                        <div>No of Trainings compleated:12</div>
+                        <div> Rating:
+                            <span class="col-md-2 pt-3"><span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star"></span> </span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="modal fade" id="ron" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header" style="padding:35px 50px;">
+                        <img src="male2.jpg" alt="Mr Smith" class="mr-2 mt-2  " style="width:60px;">
+                        <h5> Ron Weasley</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                    </div>
+                    <div class="modal-body" style="padding:40px 50px;">
+                        <div>
+                            <p>Technologies known: Spring ,java,Angular</p>
+                        </div>
+                        <div>No of Trainings compleated:12</div>
+                        <div> Rating:
+                            <span class="col-md-2 pt-3"><span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star"></span> </span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
 
 
 
