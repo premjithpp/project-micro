@@ -1,13 +1,15 @@
 
 .bg {
-  background-image: url("desktop.png");
+  background-image: url("../images/desktop.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 10px;
   height: 100%;
 }
-
+#search-result{
+  display: none;
+}
 #head {
   margin-left: 50px;
 }
