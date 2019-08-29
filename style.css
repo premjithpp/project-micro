@@ -1,4 +1,20 @@
-.idiot{
+
+.bg {
+  background-image: url("desktop.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 10px;
+  height: 100%;
+}
+
+#head {
+  margin-left: 50px;
+}
+header{
+  opacity: 0.8;
+}
+.message{
   /* padding: 100px 0px 0px 30px;
   color:white; */
   width: 600px;
@@ -10,32 +26,13 @@
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-#head {
-  margin-left: 50px;
-}
-#heading{
-  opacity: 0.8;
-}
-.index{
-  opacity:40px;
-}
 .checked{
   color: orange;
 }
-#search-result{
-  display:none;
-}
+
 .elements{
   color: white;
 }
-.bg {
-    background-image: url("desktop.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 10px;
-    height: 100%;
-  }
 
 
 .input-group.md-form.form-sm.form-2 input {
@@ -60,4 +57,21 @@ border-bottom-left-radius: 0.25rem;
   }
   .page-footer{
     opacity: 0.8;
+  }
+  #msform {
+    width: 400px;
+    margin: 50px auto;
+    text-align: center;
+    position: relative;
+  }
+  #msform input, #msform textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #2C3E50;
+    font-size: 13px;
   }
