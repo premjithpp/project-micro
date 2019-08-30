@@ -14,11 +14,11 @@ function display(){
 function validate(){
    var cat= document.getElementById("category").value;
    if(cat=="trainee"){
-       window.location.href="trainee-login.html";
+       window.location.href="trainee-landing.html";
        return false;
    }
    else{
-    window.location.href="trainer-login.html";
+    window.location.href="trainer-landing.html";
     return false;
    }
 

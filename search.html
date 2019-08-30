@@ -40,12 +40,18 @@
 
 
     <div class="container-fluid  ">
-        <h5 class="row align-items-center justify-content-center pt-3">Serach Trainers</h5>
+        <h5 class="row align-items-center justify-content-center pt-3">Search Trainers</h5>
         <div class="row align-items-center justify-content-center">
             <div class="col-md-4 pt-3">
                 <div class="form-group ">
-                    <input type="text" id="textSearch" class="form-control" placeholder="spring" autofocus>
-
+                        <select id="technology"  class="form-control" autofocus>
+                                <option>Spring</option>
+                                <option selected>Angular</option>
+                                <option>Java</option>
+                                <option>Python</option>
+                                <option>Html</option>
+                                <option>CSS</option>
+                        </select>
                 </div>
             </div>
 
@@ -153,14 +159,14 @@
 
                     </div>
                     <div class="modal-body" style="padding:40px 50px;">
-                        <form role="form">
+                        <form role="form" onsubmit=" return validate()">
                             <div class="form-group">
                                 <label for="usrname"><span class="fa fa-user-circle-o"></span> Username</label>
-                                <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                                <input type="text" class="form-control" id="usrname" placeholder="Enter Username" required>
                             </div>
                             <div class="form-group">
                                 <label for="psw"><span class="fa fa-eye"></span> Password</label>
-                                <input type="password" class="form-control" id="psw" placeholder="Enter password">
+                                <input type="password" class="form-control" id="psw" placeholder="Enter Username" required>
                             </div>
                             <div class="form-group">
                                 <label for="category"><span class="fa fa-questionmark"></span> Category</label>
@@ -172,7 +178,7 @@
                             <div class="checkbox">
                                 <label><input type="checkbox" value="" checked>Remember me</label>
                             </div>
-                            <button type="submit" class="btn btn-dark btn-block" onclick=" return validate()"><span
+                            <button type="submit" class="btn btn-dark btn-block" ><span
                                     class="fa fa-sign-in"></span>
                                 Login</button>
                         </form>
